@@ -1,0 +1,32 @@
+.articles {
+  margin-top: -7rem;
+  padding-top: 7rem;
+  background-color: $very-light-gray;
+  .articles-header__title {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .articles-card {
+    max-width: 500px;
+  }
+  .articles-card__img {
+    max-height: 172.66px;
+  }
+  .articles-card__title {
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      color: $primary-lime-green;
+    }
+  }
+  .articles-card__subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: $grayish-blue;
+  }
+  .articles-card__info {
+    font-size: 12px;
+    font-weight: 600;
+    color: $grayish-blue;
+  }
+}

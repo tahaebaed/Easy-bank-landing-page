@@ -1,0 +1,50 @@
+@mixin btn($bg-color: #e2e2e2) {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: $base-padding $base-padding * 2;
+  border-radius: $base-border-radius;
+  background: $bg-color;
+}
+
+.btn {
+  @include btn;
+}
+
+@each $key, $val in $colors {
+  .button-#{$key} {
+    @include btn($val);
+    &:hover {
+      @if $key == 'gradient' or $key == 'gradient-lighten' {
+        opacity: 0.7;
+      } @else {
+        background-color: lighten($val, 5);
+      }
+    }
+  }
+  .button-outlined-#{$key} {
+    @include btn(none);
+    border: $base-border-thickness solid $val;
+    &:hover {
+      @if $key == 'gradient' or $key == 'gradient-lighten' {
+        opacity: 0.7;
+      } @else {
+        background-color: lighten($val, 5);
+      }
+    }
+  }
+
+  .button-complement-#{$key} {
+    @include btn($val);
+    color: light-comp($val);
+    &:hover {
+      @if $key == 'gradient' or $key == 'gradient-lighten' {
+        opacity: 0.7;
+      } @else {
+        background-color: lighten($val, 5);
+        color: $val;
+      }
+    }
+  }
+}

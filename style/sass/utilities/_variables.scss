@@ -1,0 +1,55 @@
+$primary: hsl(233, 26%, 24%);
+$primary-lime-green: hsl(136, 65%, 51%);
+$primary-bright-cyan: hsl(192, 70%, 51%);
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+$gradient: linear-gradient(90deg, $primary-lime-green, $primary-bright-cyan);
+$gradient-lighten: linear-gradient(
+  90deg,
+  rgba(97, 255, 139, 0.835),
+  rgba(62, 216, 255, 0.77)
+);
+
+$colors: (
+  'primary': $primary,
+  'secondary': $primary-lime-green,
+  'grayish-blue': $grayish-blue,
+  'light-grayish-blue': hsl(220, 16%, 96%),
+  'very-light-gray': hsl(0, 0%, 98%),
+  'white': hsl(0, 0%, 100%),
+  'gradient': linear-gradient(90deg, $primary-lime-green, $primary-bright-cyan),
+  'gradient-lighten':
+    linear-gradient(90deg, rgba(97, 255, 139, 0.835), rgba(62, 216, 255, 0.77)),
+);
+
+// ### Primary
+
+// - Dark Blue: hsl(233, 26%, 24%)
+// - Lime Green: hsl(136, 65%, 51%)
+// - Bright Cyan: hsl(192, 70%, 51%)
+
+// ### Neutral
+
+// - Grayish Blue: hsl(233, 8%, 62%)
+// - Light Grayish Blue: hsl(220, 16%, 96%)
+// - Very Light Gray: hsl(0, 0%, 98%)
+// - White: hsl(0, 0%, 100%)
+
+// variables of spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// variables of borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+// box shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;

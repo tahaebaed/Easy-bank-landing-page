@@ -1,0 +1,19 @@
+.footer {
+  padding: 2.5rem 0;
+  a {
+    &:hover {
+      filter: invert(37%) sepia(121%) saturate(429%) hue-rotate(76deg)
+        brightness(74%) contrast(141%);
+    }
+  }
+  li {
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    &:hover {
+      color: $primary-lime-green;
+    }
+  }
+}

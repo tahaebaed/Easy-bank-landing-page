@@ -1,0 +1,50 @@
+.home {
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+  background-color: $very-light-gray;
+  .home-section {
+    @media screen and (min-width: 320px) and (max-width: 767.98px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  .home-section_left {
+    margin-bottom: 5rem;
+    h1 {
+      font-size: 40px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      width: 75%;
+    }
+    @media screen and (max-width: 767px) {
+      h1 {
+        text-align: center;
+      }
+      margin-top: 5rem;
+      header {
+        align-items: center;
+      }
+    }
+  }
+  .home-section_right {
+    position: relative;
+  }
+  .home-section_right-hero_img {
+    position: relative;
+    z-index: 2;
+    right: -46%;
+    margin: -73px;
+    @media screen and (max-width: 767px) {
+      position: relative;
+      z-index: 2;
+      left: 20%;
+      margin: -73px;
+    }
+    @media screen and (max-width: 500) {
+      left: 15%;
+    }
+  }
+}

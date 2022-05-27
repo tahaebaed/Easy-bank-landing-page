@@ -1,0 +1,42 @@
+.about {
+  padding: 5rem 0;
+  background: $light-grayish-blue;
+  position: relative;
+  top: -7rem;
+  z-index: 0;
+  .about-header__title {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .about-header__info {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5rem;
+    width: 50%;
+    @media screen and (min-width: 376px) and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  .about-card__wrapper {
+    img {
+      width: 70px;
+      margin: 0.8rem;
+    }
+    .card {
+      @media screen and (max-width: 767px) {
+        text-align: center;
+        align-items: center;
+        .card-title {
+          margin-bottom: 1.5rem;
+          font-weight: 400;
+        }
+      }
+      .card-text {
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 1rem;
+        color: $grayish-blue;
+      }
+    }
+  }
+}
