@@ -24,8 +24,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Code URL: [Code Url](https://github.com/tahaebaed/Easy-bank-landing-page)
+- Live Site URL: [live site URL here](https://easy-bank-landing-page-liart.vercel.app/)
 
 ## My process
 
